@@ -1,7 +1,7 @@
 # pythonWebsitePixelTracking
 
 ### server
-CentOsS 7
+CentOS 7
 
 ### ip address log
 Database import functionality has not been added, the IP address is written into `/home/vestaCentral/mnt/pythonWebsite/pt.out`
