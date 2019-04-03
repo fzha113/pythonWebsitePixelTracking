@@ -1,5 +1,8 @@
 # pythonWebsitePixelTracking
 
+### server
+CentOsS 7
+
 ### ip address log
 Database import functionality has not been added, the IP address is written into `/home/vestaCentral/mnt/pythonWebsite/pt.out`
 
@@ -11,10 +14,11 @@ Unfortunately, the DNS nameservers still forwarding the domain, we may only can 
 server run log is `uwsgi.log`
 uwsgi setting file is `uwsgi.ini`
 
-start uwsgi ``
+start uwsgi `uwsgi --ini uwsgi.ini` this command would use 8000 port
 
 ### nginx 
 setting file `pt_nginx.conf` which is link to `/etc/nginx/conf.d`
+start nginx `service nginx start` it listen 443 port
 
 ### system environment
 Django==2.1.7
