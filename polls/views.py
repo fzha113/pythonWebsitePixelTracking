@@ -24,8 +24,8 @@ def request_demo(request):
 
     print(ip)
 
-    f = open("/usr/local/pt/pythonWebsite/pt.out", 'a')
-    print("\n ip: {0}".format(ip), file=f)
+    f = open("/home/vestaCentral/mnt/pythonWebsite/pt.out", 'a')
+    print("\n ip: {0}".format(ip), file = f)
     f.close()
 
     return HttpResponse()
