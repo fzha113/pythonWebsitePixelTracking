@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+<div><h3>Simple Django APP</h3></div>
+<div>
+    <script>
+    var img = new Image();
+    var url  = "http://localhost:8080/polls/index/request_demo/";
+    var Http = new XMLHttpRequest();
+
+    // ajax funciton
+    img.onload = function () {
+        Http.open("GET", url);
+        Http.send();
+        alert("send request");
+    };
+
+    Http.onreadystatechange = function(){
+        if(this.readyState===4 && this.status===200){
+            console.log(Http.responseText);
+            alert("log");
+        }
+    };
+    
+    img.src = "https://upload.wikimedia.org/wikipedia/en/a/ac/University_of_Auckland_Coat_of_Arms.png";
+    img.height = 1;
+    img.weight = 1;
+    document.body.appendChild(img);
+
+    </script>
+
+</div>
+</body>
+</html>
+
+
